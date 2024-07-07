@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #fffcfc;
+  }
+  .wrapper{
+    height: 50px;
+    width: 120px;
+    border: 2px solid black;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .block{
+    display: inline-block;
+    height: 50px;
+    width: 60px;
+    background: black;
+    position: absolute;
+    animation: slide 1s linear
+    infinite;
+  }
+  @keyframes slide{
+    from{
+        transform: translate(-30px);
+    }
+    to{
+        transform: translate(27px);
+    }
+  }
+ </style>
+</head>
+<body>
+   <div class="wrapper">
+    <span class="block"></span>
+   </div>
+</body>
+</html>
